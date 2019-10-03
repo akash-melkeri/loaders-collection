@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>loader</title>
+    <style>
+        .cont{
+            left:41%;
+            top:50%;
+            position:absolute;
+        }
+        .loader{
+            display:inline-block;
+            height:20px;
+            width:20px;
+            background-color:#2095e8;
+            animation:bounce 1.5s ease infinite;
+            border-radius:50%;
+            
+        }
+        
+        .l1{animation-delay:0ms;}
+        .l2{animation-delay:100ms;}
+        .l3{animation-delay:200ms;}
+        .l4{animation-delay:300ms;}
+        
+        @keyframes bounce{
+            
+            0%,15%,45%,100%{
+                transform:translateY(0px);
+                background-color:#092aad;
+            }
+            
+            30%{
+                transform:translateY(-25px);
+                background-color:cyan;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+    <div class="loader l1"></div>
+    <div class="loader l2"></div>
+    <div class="loader l3"></div>
+    <div class="loader l4"></div>
+    </div>
+</body>
+</html>
