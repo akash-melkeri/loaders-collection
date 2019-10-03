@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<style>
+		.loading {
+			position:absolute;
+			text-align:center;
+			top:45%;
+			left:28%;
+	
+			font-size:26px;
+			color:white;
+			text-transform:uppercase;
+			letter-spacing:5px;
+
+			border-bottom:16px solid white;
+		}
+	
+		.loading:before {
+			content: attr(data-text);
+			position:absolute;
+			color:cyan;
+			overflow:hidden;
+			border-bottom:16px solid cyan;
+			animation: slide 4.5s linear infinite;
+		}
+
+		@keyframes slide 
+		{
+			0% { 
+			    width:0;
+			   }
+			   
+			100%{
+			     width:100%;
+			    }
+		}
+		
+		</style>
+	
+	</head>
+	
+	<body bgcolor="black">
+	
+		<div class="loading" data-text="loading...">Loading...</div>
+	
+	</body>
+</html>
