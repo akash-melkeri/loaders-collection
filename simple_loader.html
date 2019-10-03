@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="view-port" content="width=device-width, initial-scale:1.0">
+    <title>Index</title>
+    <style>
+        body{
+            background:;
+        }
+        .loading{
+            /*size of loader-->*/
+            height:50px;
+            width:50px;
+            /*positioning loader*/
+            position:absolute;
+            left:50%;
+            top:50%;
+            /*displaying loader above all*/
+            z-index:1;
+            /*Designing loader*/
+            border-top:10px solid red;
+            border-bottom:10px solid green;
+            border-left:10px solid blue;
+            border-right:10px solid yellow;
+            border-radius:50%;
+            /*adding rotation animation to loader*/
+            animation:rotator 2s linear infinite;
+            
+        }
+        /*definining rotation animation*/
+        @keyframes rotator{
+            0%{transform:rotate(0deg)}
+            100%{transform:rotate(360deg)}
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        
+    </div>
+</body>
+</html>
