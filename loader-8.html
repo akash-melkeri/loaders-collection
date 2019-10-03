@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<style type="text/css">
+			body{
+				background:black;
+				color:white;
+			}
+			.a0{
+				position:absolute;
+				color:yellow;
+				background:cyan;
+				display:inline-block;
+				height:20px;
+				width:20px;
+				text-align:center;
+				left:0%;
+				top:0%;
+				
+				animation:rot 2s ease infinite;
+			}
+			
+			.cont{
+				position:absolute;
+				left:45%;
+				top:40%;
+				height:40px;
+				width:40px;
+				border:1px solid white;
+			}
+			
+			@keyframes rot{
+				0%{
+					top:0%;
+					left:0%;
+					right:auto;
+					bottom:auto;
+					height:20px;
+					width:20px;
+					
+				}
+				12.5%{
+					top:0%;
+					left:25%;
+					right:0%;
+					bottom:auto;
+					width:31px;
+					height:20px;
+				}
+				25%{
+					top:0%;
+					right:0%;
+					left:auto;
+					bottom:auto;
+					height:20px;
+					width:20px;
+				}
+				37.5%{
+					top:25%;
+					right:0%;
+					left:auto;
+					bottom:0%;
+					height:31px;
+					width:20px;
+				}
+				50%{
+					top:auto;
+					right:0%;
+					left:auto;
+					bottom:0%;
+					height:20px;
+					width:20px;
+				}
+				62.5%{
+					top:auto;
+					left:auto;
+					right:25%;
+					bottom:0%;;
+					height:20px;
+					width:31px;
+				}
+				75%{
+					top:auto;
+					left:0%;
+					right:auto;
+					bottom:0%;
+					height:20px;
+					width:20px;
+				}
+				87.5%{
+					top:auto;
+					left:0%;
+					right:auto;
+					bottom:25%;
+					height:31px;
+					width:20px;
+				}
+				100%{
+					top:0%;
+					left:0%;
+					right:auto;
+					bottom:auto;
+					height:20px;
+					width:20px;
+				{
+			}
+		</style>
+	</head>
+	<body>
+	 	<div class="cont">
+			<div class="a0"></div>
+		</div>
+	</body>
+</html>
